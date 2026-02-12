@@ -1,0 +1,28 @@
+/* Header styles */
+.header {
+  @apply bg-blue-600 text-white shadow-lg;
+}
+
+.container {
+  @apply container mx-auto px-4 py-6;
+}
+
+.title {
+  @apply text-3xl font-bold;
+}
+
+.nav {
+  @apply mt-4;
+}
+
+.navList {
+  @apply flex space-x-6;
+}
+
+.navLink {
+  @apply hover:text-blue-200 transition-colors;
+}
+
+.navLink:hover {
+  @apply text-blue-200;
+}

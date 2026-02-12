@@ -1,0 +1,44 @@
+/* Footer styles */
+.footer {
+  @apply bg-gray-800 text-white mt-auto;
+}
+
+.container {
+  @apply container mx-auto px-4 py-8;
+}
+
+.grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-8;
+}
+
+.title {
+  @apply text-xl font-semibold mb-4;
+}
+
+.subtitle {
+  @apply text-lg font-semibold mb-4;
+}
+
+.description {
+  @apply text-gray-300;
+}
+
+.contactInfo {
+  @apply text-gray-300;
+}
+
+.socialLinks {
+  @apply flex space-x-4;
+}
+
+.socialLink {
+  @apply text-gray-300 hover:text-white transition-colors;
+}
+
+.divider {
+  @apply border-t border-gray-700 mt-8 pt-8 text-center;
+}
+
+.copyright {
+  @apply text-gray-400;
+}

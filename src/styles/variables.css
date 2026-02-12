@@ -1,0 +1,85 @@
+:root {
+  /* Colors */
+  --primary-color: #04babd; /* Custom teal */
+  --primary-dark: #038a8d; /* Darker teal */
+  --primary-light: #4dd0d3; /* Lighter teal */
+  --secondary-color: #1f2937; /* gray-800 */
+  --secondary-light: #374151; /* gray-700 */
+  --accent-color: #10b981; /* emerald-500 */
+  --text-primary: #111827; /* gray-900 */
+  --text-secondary: #6b7280; /* gray-500 */
+  --text-light: #d1d5db; /* gray-300 */
+  --background: #ffffff;
+  --background-secondary: #f9fafb; /* gray-50 */
+  
+  /* Spacing */
+  --container-padding: 1rem;
+  --section-padding: 2rem 0;
+  --header-height: 80px;
+  
+  /* Typography */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+}
+
+/* Custom utility classes */
+.custom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.custom-button {
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  border: none;
+}
+
+.custom-button-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.custom-button-primary:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-lg);
+}
+
+.custom-card {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+.custom-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
