@@ -10,7 +10,6 @@ const Logo = () => {
       </div>
       <div className="hidden sm:block">
         <h1 className="text-xl font-bold text-white">{t('title')}</h1>
-        <p className="text-xs text-white text-opacity-80">Engineering Solutions</p>
       </div>
     </div>
   )
