@@ -2,10 +2,12 @@ import { LanguageProvider } from './context/LanguageContext'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HeroSection from './components/HeroSection'
-import ServicesSection from './components/ServicesSection'
 import AboutSection from './components/AboutSection'
+import ServicesSection from './components/ServicesSection'
 import BrandsSlider from './components/BrandsSlider'
 import PartnersSlider from './components/PartnersSlider'
+import ProjectsSection from './components/ProjectsSection'
+import FAQSection from './components/FAQSection'
 
 const AppContent = () => {
   return (
@@ -16,7 +18,9 @@ const AppContent = () => {
         <AboutSection />
         <ServicesSection />
         <BrandsSlider />
+        <ProjectsSection />
         <PartnersSlider />
+        <FAQSection />
       </main>
       <Footer />
     </div>

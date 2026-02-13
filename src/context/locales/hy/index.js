@@ -5,6 +5,8 @@ import footer from './footer'
 import about from './about'
 import brands from './brands'
 import partners from './partners'
+import projects from './projects'
+import faq from './faq'
 
 export default {
   ...common,
@@ -13,5 +15,7 @@ export default {
   services,
   footer,
   brands,
-  partners
+  partners,
+  projects,
+  faq
 }
