@@ -8,6 +8,7 @@ import partners from './partners'
 import projects from './projects'
 import faq from './faq'
 import aboutPage from './aboutPage'
+import newsPage from './newsPage'
 
 export default {
   ...common,
@@ -19,5 +20,6 @@ export default {
   partners,
   projects,
   faq,
-  aboutPage
+  aboutPage,
+  newsPage
 }
