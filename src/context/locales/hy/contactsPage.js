@@ -23,6 +23,4 @@ export default {
   responseNote: 'Մենք պատասխան ենք տալիս 24 ժամվա ընթացքում',
   socialTitle: 'Մենք սոցիալական ցանցերում',
   contactInfoTitle: 'Կոնտակտային տեղեկություն',
-  emailDisplay: 'info@sardengineering.com',
-  phoneDisplay: '+374 (XX) XXX-XXX'
 }

@@ -23,6 +23,4 @@ export default {
   responseNote: 'We respond within 24 hours',
   socialTitle: 'We are on social media',
   contactInfoTitle: 'Contact Information',
-  emailDisplay: 'info@sardengineering.com',
-  phoneDisplay: '+374 (XX) XXX-XXX'
 }
