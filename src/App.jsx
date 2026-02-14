@@ -1,36 +1,25 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { LanguageProvider } from './context/LanguageContext'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import HeroSection from './components/HeroSection'
-import AboutSection from './components/AboutSection'
-import ServicesSection from './components/ServicesSection'
-import BrandsSlider from './components/BrandsSlider'
-import PartnersSlider from './components/PartnersSlider'
-import ProjectsSection from './components/ProjectsSection'
-import FAQSection from './components/FAQSection'
-
-const AppContent = () => {
-  return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
-      <Header />
-      <main className="flex-1">
-        <HeroSection />
-        <AboutSection />
-        <ServicesSection />
-        <BrandsSlider />
-        <ProjectsSection />
-        <PartnersSlider />
-        <FAQSection />
-      </main>
-      <Footer />
-    </div>
-  )
-}
+import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
 
 const App = () => {
   return (
     <LanguageProvider>
-      <AppContent />
+      <Router>
+        <div className="min-h-screen flex flex-col bg-gray-50">
+          <Header />
+          <main className="flex-1">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </Router>
     </LanguageProvider>
   )
 }

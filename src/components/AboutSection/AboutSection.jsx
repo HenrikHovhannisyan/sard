@@ -1,4 +1,5 @@
 import { useLanguage } from '../../context/LanguageContext'
+import { Link } from 'react-router-dom'
 
 const AboutSection = () => {
   const { t } = useLanguage()
@@ -13,13 +14,13 @@ const AboutSection = () => {
           <p className="text-lg text-gray-700 mb-8 leading-relaxed">
             {t('aboutDescription')}
           </p>
-          <a 
-            href="#about"
+          <Link 
+            to="/about"
             className="inline-block px-8 py-3 rounded-lg font-semibold text-white transition-all duration-200 shadow-lg hover:shadow-xl hover:transform hover:-translate-y-1"
             style={{backgroundColor: '#04babd'}}
           >
             {t('aboutLearnMore')}
-          </a>
+          </Link>
         </div>
       </div>
     </section>

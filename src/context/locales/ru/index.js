@@ -7,6 +7,7 @@ import brands from './brands'
 import partners from './partners'
 import projects from './projects'
 import faq from './faq'
+import aboutPage from './aboutPage'
 
 export default {
   ...common,
@@ -17,5 +18,6 @@ export default {
   brands,
   partners,
   projects,
-  faq
+  faq,
+  aboutPage
 }
