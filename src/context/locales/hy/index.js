@@ -9,6 +9,7 @@ import projects from './projects'
 import faq from './faq'
 import aboutPage from './aboutPage'
 import newsPage from './newsPage'
+import contactsPage from './contactsPage'
 
 export default {
   ...common,
@@ -21,5 +22,6 @@ export default {
   projects,
   faq,
   aboutPage,
-  newsPage
+  newsPage,
+  contactsPage
 }

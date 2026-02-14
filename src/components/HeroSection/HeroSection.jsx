@@ -1,4 +1,5 @@
 import { useLanguage } from '../../context/LanguageContext'
+import { Link } from 'react-router-dom'
 
 const HeroSection = () => {
   const { t } = useLanguage()
@@ -12,12 +13,13 @@ const HeroSection = () => {
         <p className="text-xl md:text-2xl text-white text-opacity-90 mb-8 max-w-3xl mx-auto">
           {t('description')}
         </p>
-        <button 
-          className="bg-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 shadow-lg"
+        <Link 
+          to="/contacts"
+          className="inline-block bg-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 shadow-lg"
           style={{color: '#04babd'}}
         >
           {t('contacts')}
-        </button>
+        </Link>
       </div>
     </section>
   )
