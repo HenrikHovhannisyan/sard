@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useLanguage } from '../../context/LanguageContext'
 import { partners } from '../../config/partners'
+import ImageWithFallback from '../ImageWithFallback/ImageWithFallback'
 
 const PartnersSlider = () => {
   const { t, currentLanguage } = useLanguage()
@@ -62,7 +63,7 @@ const PartnersSlider = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4" style={{color: '#04babd'}}>
+          <h2 className="text-4xl font-bold mb-4" style={{color: 'var(--primary-color)'}}>
             {t('partners.title')}
           </h2>
           <p className="text-lg text-gray-600">
@@ -87,12 +88,12 @@ const PartnersSlider = () => {
                 className="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-center group"
                 title={partner.description[currentLanguage]}
               >
-                <img 
+                <ImageWithFallback 
                   src={partner.logo} 
                   alt={partner.name}
                   className="w-full h-16 object-contain mb-3 grayscale group-hover:grayscale-0 transition-all duration-300"
                 />
-                <h4 className="text-sm font-semibold text-gray-700 text-center group-hover:text-[#04babd] transition-colors">
+                <h4 className="text-sm font-semibold text-gray-700 text-center group-hover:text-[var(--primary-color)] transition-colors">
                   {partner.name}
                 </h4>
               </a>
@@ -103,7 +104,7 @@ const PartnersSlider = () => {
           <button
             onClick={prevSlide}
             className="absolute left-0 top-1/2 -translate-y-1/2 md:-translate-x-4 translate-x-2 bg-white p-2 md:p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 z-10"
-            style={{color: '#04babd'}}
+            style={{color: 'var(--primary-color)'}}
           >
             <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -112,7 +113,7 @@ const PartnersSlider = () => {
           <button
             onClick={nextSlide}
             className="absolute right-0 top-1/2 -translate-y-1/2 md:translate-x-4 -translate-x-2 bg-white p-2 md:p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 z-10"
-            style={{color: '#04babd'}}
+            style={{color: 'var(--primary-color)'}}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -129,7 +130,7 @@ const PartnersSlider = () => {
               className={`w-3 h-3 rounded-full transition-all duration-200 ${
                 currentIndex === index ? 'w-8' : ''
               }`}
-              style={{backgroundColor: currentIndex === index ? '#04babd' : '#d1d5db'}}
+              style={{backgroundColor: currentIndex === index ? 'var(--primary-color)' : '#d1d5db'}}
             />
           ))}
         </div>

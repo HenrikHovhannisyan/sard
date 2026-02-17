@@ -14,7 +14,7 @@ const LanguageSwitcher = () => {
               ? 'bg-white shadow-sm'
               : 'text-white hover:text-white hover:bg-black hover:bg-opacity-10'
           }`}
-          style={currentLanguage === code ? {color: '#04babd'} : {}}
+          style={currentLanguage === code ? {color: 'var(--primary-color)'} : {}}
         >
           {name}
         </button>

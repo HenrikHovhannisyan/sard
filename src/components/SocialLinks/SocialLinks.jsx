@@ -21,8 +21,8 @@ const ICONS = {
 const SocialLinks = ({ variant = 'light' }) => {
   const itemClass =
     variant === 'dark'
-      ? 'w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#04babd] transition-colors duration-200'
-      : 'w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-[#04babd] hover:text-white transition-colors'
+      ? 'w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[var(--primary-color)] transition-colors duration-200'
+      : 'w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-[var(--primary-color)] hover:text-white transition-colors'
 
   const entries = Object.entries(site.socials || {})
 

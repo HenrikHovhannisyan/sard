@@ -1,6 +1,7 @@
 import { useLanguage } from '../../context/LanguageContext'
 import { newsData } from '../../config/news'
 import { Link } from 'react-router-dom'
+import ImageWithFallback from '../../components/ImageWithFallback/ImageWithFallback'
 
 const NewsPage = () => {
   const { t, currentLanguage } = useLanguage()
@@ -14,7 +15,7 @@ const NewsPage = () => {
 
   return (
     <div className="min-h-screen">
-      <section className="text-white py-20" style={{background: 'linear-gradient(135deg, #04babd 0%, #038a8d 100%)'}}>
+      <section className="text-white py-20" style={{background: 'linear-gradient(135deg, var(--primary-color) 0%, #038a8d 100%)'}}>
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             {t('newsPage.pageTitle')}
@@ -32,7 +33,7 @@ const NewsPage = () => {
               <Link to={`/news/${item.id}`} key={item.id}>
                 <article className="bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200 group">
                   <div className="relative h-40 overflow-hidden">
-                    <img
+                    <ImageWithFallback
                       src={item.image}
                       alt={item.title[currentLanguage]}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -42,7 +43,7 @@ const NewsPage = () => {
                     </div>
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-[#04babd] transition-colors">
+                    <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-[var(--primary-color)] transition-colors">
                       {item.title[currentLanguage]}
                     </h3>
                     <p className="text-gray-600">

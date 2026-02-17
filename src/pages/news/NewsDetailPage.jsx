@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom'
 import { useLanguage } from '../../context/LanguageContext'
 import { newsData } from '../../config/news'
+import ImageWithFallback from '../../components/ImageWithFallback/ImageWithFallback'
 
 const NewsDetailPage = () => {
   const { id } = useParams()
@@ -24,7 +25,7 @@ const NewsDetailPage = () => {
           <Link
             to="/news"
             className="inline-block px-6 py-2 rounded-lg font-semibold text-white"
-            style={{backgroundColor: '#04babd'}}
+            style={{backgroundColor: 'var(--primary-color)'}}
           >
             {t('news')}
           </Link>
@@ -35,7 +36,7 @@ const NewsDetailPage = () => {
 
   return (
     <div className="min-h-screen">
-      <section className="text-white py-20" style={{background: 'linear-gradient(135deg, #04babd 0%, #038a8d 100%)'}}>
+      <section className="text-white py-20" style={{background: 'linear-gradient(135deg, var(--primary-color) 0%, #038a8d 100%)'}}>
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             {item.title[currentLanguage]}
@@ -48,7 +49,7 @@ const NewsDetailPage = () => {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <img
+          <ImageWithFallback
             src={item.image}
             alt={item.title[currentLanguage]}
             className="w-full h-80 object-cover rounded-xl shadow-md mb-8"
@@ -62,7 +63,7 @@ const NewsDetailPage = () => {
             <Link
               to="/news"
               className="inline-block px-6 py-2 rounded-lg font-semibold text-white"
-              style={{backgroundColor: '#04babd'}}
+              style={{backgroundColor: 'var(--primary-color)'}}
             >
               {t('news')}
             </Link>

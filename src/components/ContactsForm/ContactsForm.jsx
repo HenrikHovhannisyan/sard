@@ -45,7 +45,7 @@ const ContactsForm = () => {
   if (submitted) {
     return (
       <div className="max-w-3xl mx-auto bg-gray-50 p-8 rounded-xl shadow-sm text-center">
-        <h3 className="text-2xl font-semibold mb-3" style={{color: '#04babd'}}>
+        <h3 className="text-2xl font-semibold mb-3" style={{color: 'var(--primary-color)'}}>
           {t('contactsPage.successTitle')}
         </h3>
         <p className="text-gray-700">{t('contactsPage.successText')}</p>
@@ -63,7 +63,7 @@ const ContactsForm = () => {
           name="name"
           value={form.name}
           onChange={update}
-          className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#04babd]"
+          className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
           placeholder={t('contactsPage.namePlaceholder')}
         />
         {errors.name && (
@@ -80,7 +80,7 @@ const ContactsForm = () => {
             name="email"
             value={form.email}
             onChange={update}
-            className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#04babd]"
+            className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
             placeholder={t('contactsPage.emailPlaceholder')}
           />
           {errors.email && (
@@ -95,7 +95,7 @@ const ContactsForm = () => {
             name="phone"
             value={form.phone}
             onChange={update}
-            className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#04babd]"
+            className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
             placeholder={t('contactsPage.phonePlaceholder')}
           />
           {errors.phone && (
@@ -115,7 +115,7 @@ const ContactsForm = () => {
           name="subject"
           value={form.subject}
           onChange={update}
-          className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#04babd]"
+          className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
           placeholder={t('contactsPage.subjectPlaceholder')}
         />
       </div>
@@ -129,7 +129,7 @@ const ContactsForm = () => {
           value={form.message}
           onChange={update}
           rows={6}
-          className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#04babd]"
+          className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
           placeholder={t('contactsPage.messagePlaceholder')}
         />
         {errors.message && (
@@ -140,7 +140,7 @@ const ContactsForm = () => {
       <button
         type="submit"
         className="px-8 py-3 rounded-lg font-semibold text-white transition-all duration-200 shadow-lg hover:shadow-xl hover:transform hover:-translate-y-1"
-        style={{backgroundColor: '#04babd'}}
+        style={{backgroundColor: 'var(--primary-color)'}}
       >
         {t('contactsPage.submit')}
       </button>

@@ -5,7 +5,7 @@ const HeroSection = () => {
   const { t } = useLanguage()
 
   return (
-    <section className="text-white py-20" style={{background: 'linear-gradient(135deg, #04babd 0%, #038a8d 100%)'}}>
+    <section className="text-white py-20" style={{background: 'linear-gradient(135deg, var(--primary-color) 0%, #038a8d 100%)'}}>
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-6xl font-bold mb-6">
           {t('subtitle')}
@@ -16,7 +16,7 @@ const HeroSection = () => {
         <Link 
           to="/contacts"
           className="inline-block bg-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200 shadow-lg"
-          style={{color: '#04babd'}}
+          style={{color: 'var(--primary-color)'}}
         >
           {t('contacts')}
         </Link>

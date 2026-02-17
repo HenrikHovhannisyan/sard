@@ -10,7 +10,7 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="text-white py-20" style={{background: 'linear-gradient(135deg, #04babd 0%, #038a8d 100%)'}}>
+      <section className="text-white py-20" style={{background: 'linear-gradient(135deg, var(--primary-color) 0%, #038a8d 100%)'}}>
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             {t('aboutPage.pageTitle')}
@@ -22,7 +22,7 @@ const AboutPage = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{color: '#04babd'}}>
+            <h2 className="text-3xl font-bold mb-6" style={{color: 'var(--primary-color)'}}>
               {t('aboutPage.historyTitle')}
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -36,7 +36,7 @@ const AboutPage = () => {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{color: '#04babd'}}>
+            <h2 className="text-3xl font-bold mb-6" style={{color: 'var(--primary-color)'}}>
               {t('aboutPage.missionTitle')}
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -49,7 +49,7 @@ const AboutPage = () => {
       {/* Values Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center" style={{color: '#04babd'}}>
+          <h2 className="text-3xl font-bold mb-12 text-center" style={{color: 'var(--primary-color)'}}>
             {t('aboutPage.valuesTitle')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -58,7 +58,7 @@ const AboutPage = () => {
                 key={value.id}
                 className="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow duration-200"
               >
-                <h3 className="text-xl font-semibold mb-3" style={{color: '#04babd'}}>
+                <h3 className="text-xl font-semibold mb-3" style={{color: 'var(--primary-color)'}}>
                   {value.title[currentLanguage]}
                 </h3>
                 <p className="text-gray-600">
@@ -74,7 +74,7 @@ const AboutPage = () => {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6" style={{color: '#04babd'}}>
+            <h2 className="text-3xl font-bold mb-6" style={{color: 'var(--primary-color)'}}>
               {t('aboutPage.teamTitle')}
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">

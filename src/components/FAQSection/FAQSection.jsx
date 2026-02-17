@@ -14,7 +14,7 @@ const FAQSection = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4" style={{color: '#04babd'}}>
+          <h2 className="text-4xl font-bold mb-4" style={{color: 'var(--primary-color)'}}>
             {t('faq.title')}
           </h2>
           <p className="text-lg text-gray-600">
@@ -39,7 +39,7 @@ const FAQSection = () => {
                   className={`w-6 h-6 flex-shrink-0 transition-transform duration-200 ${
                     openId === faq.id ? 'transform rotate-180' : ''
                   }`}
-                  style={{color: '#04babd'}}
+                  style={{color: 'var(--primary-color)'}}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

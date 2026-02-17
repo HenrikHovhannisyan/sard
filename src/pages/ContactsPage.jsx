@@ -8,7 +8,7 @@ const ContactsPage = () => {
 
   return (
     <div className="min-h-screen">
-      <section className="text-white py-20" style={{background: 'linear-gradient(135deg, #04babd 0%, #038a8d 100%)'}}>
+      <section className="text-white py-20" style={{background: 'linear-gradient(135deg, var(--primary-color) 0%, #038a8d 100%)'}}>
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             {t('contactsPage.pageTitle')}
@@ -23,7 +23,7 @@ const ContactsPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold mb-3" style={{color: '#04babd'}}>
+              <h3 className="text-xl font-semibold mb-3" style={{color: 'var(--primary-color)'}}>
                 {t('contactsPage.addressTitle')}
               </h3>
               <p className="text-gray-700 mb-2">{site.address[currentLanguage]}</p>
@@ -40,7 +40,7 @@ const ContactsPage = () => {
               </div>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
-              <h3 className="text-xl font-semibold mb-3" style={{color: '#04babd'}}>
+              <h3 className="text-xl font-semibold mb-3" style={{color: 'var(--primary-color)'}}>
                 {t('contactsPage.contactInfoTitle')}
               </h3>
               <p className="text-gray-700 mb-4">{t('contactsPage.responseNote')}</p>
@@ -49,20 +49,20 @@ const ContactsPage = () => {
                   <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  <a href={`mailto:${site.email}`} className="text-gray-800 hover:text-[#04babd] transition-colors">
+                  <a href={`mailto:${site.email}`} className="text-gray-800 hover:text-[var(--primary-color)] transition-colors">
                     {site.email}
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21л-2.257 1.13a11.042 11.042 0 005.516 5.516л1.13-2.257a1 1 0 011.21-.502л4.493 1.498a1 1 0 01.684.949В19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6В5z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
-                  <a href={`tel:${site.phone.replace(/[^+0-9]/g, '')}`} className="text-gray-800 hover:text-[#04babd] transition-colors">
+                  <a href={`tel:${site.phone.replace(/[^+0-9]/g, '')}`} className="text-gray-800 hover:text-[var(--primary-color)] transition-colors">
                     {site.phone}
                   </a>
                 </div>
               </div>
-              <h4 className="text-lg font-semibold mb-3" style={{color: '#04babd'}}>
+              <h4 className="text-lg font-semibold mb-3" style={{color: 'var(--primary-color)'}}>
                 {t('contactsPage.socialTitle')}
               </h4>
               <div className="flex space-x-4">

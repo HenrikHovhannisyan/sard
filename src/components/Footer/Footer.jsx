@@ -1,6 +1,7 @@
 import { useLanguage } from '../../context/LanguageContext'
 import site from '../../config/data'
 import SocialLinks from '../../components/SocialLinks/SocialLinks'
+import ImageWithFallback from '../ImageWithFallback/ImageWithFallback'
 
 const Footer = () => {
   const { t } = useLanguage()
@@ -10,7 +11,13 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-semibold mb-4">{t('title')}</h3>
+            <div className="mb-4 flex items-center">
+              <ImageWithFallback
+                src="/src/assets/images/logo.png"
+                alt={t('title')}
+                className="w-28 h-auto object-contain"
+              />
+            </div>
             <p className="text-gray-300">
               {t('footer.description')}
             </p>
