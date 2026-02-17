@@ -6,7 +6,7 @@ import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import NewsPage from './pages/news/NewsPage'
 import NewsDetailPage from './pages/news/NewsDetailPage'
-import ContactsPage from './pages/contacts/ContactsPage'
+import ContactsPage from './pages/ContactsPage'
 
 const App = () => {
   return (
