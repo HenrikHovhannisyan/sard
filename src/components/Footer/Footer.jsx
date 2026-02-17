@@ -2,6 +2,7 @@ import { useLanguage } from '../../context/LanguageContext'
 import site from '../../config/data'
 import SocialLinks from '../../components/SocialLinks/SocialLinks'
 import ImageWithFallback from '../ImageWithFallback/ImageWithFallback'
+import logo from '../../assets/images/logo.png'
 
 const Footer = () => {
   const { t } = useLanguage()
@@ -13,7 +14,7 @@ const Footer = () => {
           <div>
             <div className="mb-4 flex items-center">
               <ImageWithFallback
-                src="/src/assets/images/logo.png"
+                src={logo}
                 alt={t('title')}
                 className="w-28 h-auto object-contain"
               />
