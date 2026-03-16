@@ -4,7 +4,10 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/',   // важно для production
+
   plugins: [react()],
+
   resolve: {
     alias: {
       '@': path.resolve(new URL('.', import.meta.url).pathname, './src'),
