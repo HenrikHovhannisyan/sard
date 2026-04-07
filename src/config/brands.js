@@ -1,52 +1,25 @@
+import basorElectric from '../assets/images/brands/Basor-Electric.png';
+import cembre from '../assets/images/brands/Cembre.png';
+import famatel from '../assets/images/brands/Famatel.png';
+import ideElectric from '../assets/images/brands/IDE-Electric.png';
+import mbs from '../assets/images/brands/MBS.png';
+import pcElectric from '../assets/images/brands/PC-Electric.png';
+import rittal from '../assets/images/brands/RITTAL.png';
+import siemens from '../assets/images/brands/Siemens.png';
+import sofamel from '../assets/images/brands/Sofamel.png';
+import teknomega from '../assets/images/brands/Teknomega.png';
+import topCable from '../assets/images/brands/Top-Cable.png';
+
 export const brands = [
-  {
-    id: 1,
-    name: 'Bosch',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Bosch-logotype.svg/320px-Bosch-logotype.svg.png',
-    description: {
-      hy: 'Գերմանական որակի գործիքներ և սարքավորումներ',
-      ru: 'Немецкое качество инструментов и оборудования',
-      en: 'German quality tools and equipment'
-    }
-  },
-  {
-    id: 2,
-    name: 'Siemens',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Siemens-logo.svg/320px-Siemens-logo.svg.png',
-    description: {
-      hy: 'Արդյունաբերական ավտոմատացում և էլեկտրատեխնիկա',
-      ru: 'Промышленная автоматизация и электротехника',
-      en: 'Industrial automation and electrical engineering'
-    }
-  },
-  {
-    id: 3,
-    name: 'ABB',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/ABB_logo.svg/320px-ABB_logo.svg.png',
-    description: {
-      hy: 'Համաշխարհային դասի էլեկտրատեխնիկական սարքավորումներ',
-      ru: 'Электротехническое оборудование мирового класса',
-      en: 'World-class electrical equipment'
-    }
-  },
-  {
-    id: 4,
-    name: 'Schneider Electric',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Schneider_Electric_2007.svg/320px-Schneider_Electric_2007.svg.png',
-    description: {
-      hy: 'Էներգիայի կառավարման լուծումներ',
-      ru: 'Решения для управления энергией',
-      en: 'Energy management solutions'
-    }
-  },
-  {
-    id: 5,
-    name: 'Honeywell',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Honeywell_logo.svg/320px-Honeywell_logo.svg.png',
-    description: {
-      hy: 'Ավտոմատացման և վերահսկման համակարգեր',
-      ru: 'Системы автоматизации и контроля',
-      en: 'Automation and control systems'
-    }
-  }
-]
+  { id: 1, name: 'Basor-Electric', logo: basorElectric },
+  { id: 2, name: 'Cembre', logo: cembre },
+  { id: 3, name: 'Famatel', logo: famatel },
+  { id: 4, name: 'IDE-Electric', logo: ideElectric },
+  { id: 5, name: 'MBS', logo: mbs },
+  { id: 6, name: 'PC-Electric', logo: pcElectric },
+  { id: 7, name: 'RITTAL', logo: rittal },
+  { id: 8, name: 'Siemens', logo: siemens },
+  { id: 9, name: 'Sofamel', logo: sofamel },
+  { id: 10, name: 'Teknomega', logo: teknomega },
+  { id: 11, name: 'Top-Cable', logo: topCable },
+];

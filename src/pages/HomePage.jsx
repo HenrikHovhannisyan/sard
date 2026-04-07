@@ -14,7 +14,7 @@ const HomePage = () => {
       <ServicesSection />
       <BrandsSlider />
       <ProjectsSection />
-      <PartnersSlider />
+      {/* <PartnersSlider /> */}
       <FAQSection />
     </div>
   )

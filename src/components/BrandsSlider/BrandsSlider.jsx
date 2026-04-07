@@ -82,15 +82,14 @@ const BrandsSlider = () => {
             {visibleBrands.map((brand) => (
               <div 
                 key={brand.id}
-                className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center"
+                className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-center h-full"
               >
                 <ImageWithFallback 
                   src={brand.logo} 
                   alt={brand.name}
-                  className="w-full h-24 object-contain mb-4"
+                  className="w-full h-32 object-contain mb-4"
                 />
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">{brand.name}</h3>
-                <p className="text-gray-600 text-center">{brand.description[currentLanguage]}</p>
+                <h3 className="text-xl font-semibold text-gray-800 text-center">{brand.name}</h3>
               </div>
             ))}
           </div>
